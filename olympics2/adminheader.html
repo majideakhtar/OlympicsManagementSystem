@@ -1,0 +1,60 @@
+<style type="text/css">
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navigator a {
+    width: 33.3%;
+    float: left;
+    border: 1px solid grey;
+    text-align: center;
+    padding: 5px 0;
+    text-decoration: none;
+    color: white;
+}
+
+.navigator a:hover {
+    background: grey;
+    color: white;
+}
+</style>
+<style>
+.a {
+    position: absolute;
+    left: 2%;
+    top: 40%;
+}
+
+.button {
+    padding: 13px 25px;
+    border-radius: 40%;
+    color: white;
+    background-color: ff6633;
+}
+
+.i {
+    position: relative;
+    font-family: algerian;
+    left: 2%;
+    top: 15%;
+    color: red;
+}
+
+body {
+    background-image: url("img/bolt.jpg");
+    background-size: cover;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<div style="border: 1px solid grey;padding: 10px;color: white">
+    <span><b><a href="./index.php" style="color:white;text-decoration:none">Olympics Stats</a></b></span>
+    <a href="./logout.php" style="float: right;color:white">Admin logout</a>
+</div>
+<div class="navigator">
+    <a href="./addathelete.php">Add Players</a>
+    <a href="./addSchedule.php">Add Schedule</a>
+    <a href="./addresult.php">Add Results</a>
+</div>

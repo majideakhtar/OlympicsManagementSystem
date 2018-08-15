@@ -1,0 +1,333 @@
+ <html>
+<style>
+ul {
+ overflow: hidden;
+ /*background-image: bg.jpg;*/
+}
+
+li {
+float:right;
+}
+
+li a {
+display : block;
+color :black;
+font-family:algerian;
+font-size:30;
+padding:14px 16px;
+text-align:center;
+}
+
+li a:hover{
+background-color:red;
+}
+
+div.img {
+position:absolute;
+left:3%;
+top:190%;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300;
+	background-color: 669999;
+}
+
+div.gallery:hover {
+    
+	border: 5px solid #777;
+    border-bottom-color:green;
+	border-top-color:yellow;
+	border-right-color:red;
+	border-left-color:blue;
+	
+	}
+
+div.gallery img {
+    width: 300;
+    height: 200;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+div.popular{
+position:absolute;
+left:35%;
+top:175%;
+}
+
+div.start{
+position:absolute;
+top:9.2%;
+left:0%;
+}
+div.start img{
+width:100%;
+height:350;
+}
+
+div.olympicinfo{
+position:absolute;
+left :40%;
+top:70%;
+font-size:40;
+color:red;
+}
+
+div.info{
+position:absolute;
+left:40%;
+top:80%;
+font-size:25;
+color:cc0066;
+font-family: calibri;
+}
+
+
+
+
+.dropdown {
+    left:62.2%;
+	top:-2.3em;
+    position: relative;
+    display: inline-block;
+	font-family:algerian;
+	font-size:30;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-family:algerian;
+	font-size:20;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 10px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+div.summer{
+position:absolute;
+top:70%;
+color:990099;
+font-family:algerian;
+font-size:50;
+}
+
+.video{
+position :absolute ;
+top : 100%;
+left : 0.1em ;
+width:530;
+height:400;
+}
+
+div.winter{
+position:absolute;
+top:235%;
+left:5%;
+color:990099;
+font-family:algerian;
+font-size:50;
+}
+div.win-sub{
+position:relative;
+top:110%;
+left:-3em;
+color:990099;
+font-family:algerian;
+font-size:20;
+}
+.video1{
+position :absolute ;
+top : 250%;
+left : 40% ;
+width:800;
+height:400;
+}
+
+div.find{
+position:absolute;
+top:325%;
+left:40%;
+text-align:center;
+font-family: bold;
+font-size:40;
+color: red;
+}
+div.findimage{
+position:relative;
+top:310%;
+height:500;
+}
+
+
+div.contact{
+position:absolute;
+top:410%;
+left:40%;
+text-align:center;
+font-family: bold;
+font-size:30;
+color: gray;
+
+}
+
+
+</style>
+
+ 
+ 
+ 
+ <script>
+	var i = 0; // Start point
+	var images = [];
+	var time = 3000;
+	// Image List
+	images[0] = 'img/start3.jpg';
+	images[1] = 'img/start1.jpg';
+	images[2] = 'img/start2.jpg';
+	images[3] = 'img/start3.jpg';
+    images[4]= 'img/start1.jpg ';
+	images[5]='img/start2.jpg ';
+    images[6]='img/start3.jpg';	
+	// Change Image
+	function changeImg(){
+		document.slide.src = images[i];
+
+		if(i < images.length - 1){
+			i++;
+		} else {
+			i = 0;
+		}
+
+		setTimeout("changeImg()", time);
+	}
+	window.onload = changeImg;
+	
+	
+	//var video = document.getElementById('video');
+	//video.addEventListener('click',function(){
+	 //                                         video.play();
+//											  },false);
+											  
+</script>
+<div class="start">
+ <img name="slide"  >
+ </div>
+<body  background="img/background.jpg">
+
+<!--test video-->
+<div class="summer">
+
+</br> summer </br> olympics
+</div>
+
+<div class="winter">
+
+</br> winter </br> olympics
+<div class="win-sub">Once every four years since 1924, the Winter </br>
+                     Olympics have been held in various cities around</br>
+					 the globe. In 1901 the first international </br>
+					 multi-sport winter event held was the Nordic</br>
+					 Games in Sweden. These games, held every few years,</br>
+					 eventually evolved into the Winter Olympics. </br>
+					 Prior to being given a separate event called </br>
+					 the Winter Olympics, some competitions such as speed</br>
+					 skating, ice hockey, Nordic skiing and figure skating</br>
+					 had been held as a winter sports week.
+</div>
+</div>
+<video  loop autoplay controls muted class="video" src="London 2012 Olympic Games - Trailer - BBC Sport.mp4" type="video\mp4" width="200" height="200" onclick="this.play();">
+</video>
+
+<video  loop autoplay controls muted class="video1" src="Winter Olympics 2014- Trailer - BBC Sport.mp4" type="video\mp4" width="200" height="200">
+</video>
+<!-- aa -->
+
+<ul>
+<div class="list">
+<li> <a class="aa" href="index.php" > ABOUT </a> </li>
+<li> <a class="aa" href="userlogin.php" >user login</a> </li>
+<li> <a class="aa" href="admin.php" > Admin login</a> </li>
+</div>
+</ul>
+
+
+
+
+
+    
+	
+  </div>
+</div>
+
+<!-- <div class="start">
+<img src="start1.jpg"/>
+</div>
+-->
+
+<div class="olympicinfo">
+  
+ Olympic Games </br>
+ </div>
+<div class="info">
+The Olympic Games are an important international event featuring summer and winter sports. Summer Olympic Games and Winter Olympic Games are held every four years. Originally, the ancient Olympic Games were held in Ancient Greece at Olympia. The first games were in 776 BC. They were held every four years until the 5th century AD. The first "modern" Olympics happened in 1896 in Athens, Greece. People play in the Olympics to represent their country.
+
+Over time the Olympics have become bigger. In old times, women were not allowed, but now there are women's events. The Winter Games were created for ice and snow sports. The Paralympic Games were created for athletes with physical disabilities. As well, the Olympics became bigger with the addition of the Youth Olympic Games for teenage athletes. World War I and World War II led to the cancellation of the 1916, 1940, and 1944 Games. As the decision-making body, the International Olympic Committee (IOC) is responsible for choosing the host city for each Olympic Games. The IOC is also responsible for choosing what sports are in the games.
+</div>
+ 
+ 
+<div class="popular" >
+<font face="algerian" size="30" color="black">POPULAR EVENTS </font>
+</div>
+<div class="img">
+
+<div class="gallery">
+ <img src="img/swim.jpg" width="600" height="400">
+  <div class="desc">Competitive  swimming  is  one  of the most  popular  Olympic  sports , with varied distance events in </br> butterfly,  backstroke,  breaststroke,  freestyle,  individual medley.</div>
+</div>
+
+<div class="gallery">
+    <img src="img/gym.jpg"  width="600" height="400">
+  <div class="desc"> Gymnastics is usually divided into Men's and Women's Gymnastics. Men compete on six events: Floor Exercise, Pommel Horse, Still Rings, Vault, Parallel Bars, and Horizontal Bar
+</div>
+</div>
+
+<div class="gallery">
+    <img src="img/basketball.jpg"  width="600" height="400">
+  <div class="desc"> Basketball at the Summer Olympics has been a sport for men consistently since 1936. Prior to its inclusion as a medal sport, basketball was held as a demonstration event in 1904</div>
+</div>
+
+<div class="gallery">
+    <img src="img/vollyball.jpg"  width="600" height="400">
+  <div class="desc"> Volleyball is a team sport in which two teams of six players are separated by a net. Each team tries to score points by grounding a ball on the other team's court under organized rules.</div>
+</div>
+
+ 
+ </div>
+
+<div class="find">
+FIND US
+</div>
+ <div class="findimage">
+ <img src="img/map2.jpg"/>
+ 
+ </div>
+ <div class="contact">
+Contact us 
+</br> 9594939291
+</div>
+ </body>
+ 
+ </html>

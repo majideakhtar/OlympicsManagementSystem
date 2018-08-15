@@ -1,0 +1,70 @@
+<html>
+<style>
+vi{
+position:relative;
+}
+.im{
+position:absolute;
+height :auto;
+width:100%;
+}
+.a{
+position: absolute;
+left : 2%;
+top : 40%;
+
+}
+.button{
+padding : 13px 25px;
+border-radius : 40%;
+color :white ;
+background-color : ff6633;
+
+}
+.i{
+position : relative;
+font-family: algerian;
+left :2%;
+top:15%;
+color:red;
+}
+   
+	</style>
+	<img class="im" src="img/bolt.jpg" >
+<body >
+
+<h1 class="i">  ADD ATHLETE INFORMATION <h1> 
+<table class="a" height="300" width="400" >
+<form id="form1" name="form1" method="post" action="harsh.php">
+<tr>
+ <td><font face="algerian" size="5" color="green">Athlete id </font></td>
+ <td><input type="text" name="a_idd" required /> </td> 
+ </tr>
+ <tr>
+ <td><font face="algerian" size="5" color="red">Name</font> </td>
+ <td><input type="text" name="a_name" required /> </td>
+</tr> 
+<tr> 
+ <td><font face="algerian" size="5" color="red">Date Of Birth </font></td>
+ <td><input type="text" name="a_dob" required /> </td> 
+ </tr>
+ <tr>
+ <td> <font face="algerian" size="5" color="red"> Gender </font> </td>
+ <td><input type="text" name="a_gender" required /> </td>
+</tr>
+
+<tr>
+ <td><font face="algerian" size="5" color="red"> Country code</font> </td>
+ <td><input type="text" name="ccode" required /> </td> 
+ </tr>
+
+<tr>
+ 
+<td> <input class="button" type="submit" name="Submit" value="ADD" />
+  </td>
+  </tr>
+  </form>
+  </table>
+   
+</body>
+</html>
