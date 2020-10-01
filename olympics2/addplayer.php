@@ -16,18 +16,18 @@ if(empty($_POST['a_name']))
 if(empty($_POST['a_dob']))
 {
     echo "Date of birth cannot be empty";
-    return false;
+    return 0;
 }
 
 if(empty($_POST['a_gender']))
 {
     echo "Please specify Gender";
-    return false;
+    return 0;
 }
 if(empty($_POST['ccode']))
 {
     echo "Please specify country";
-    return false;
+    return 0;
 }
 // Define $username and $password 
 $a_name=stripslashes($_POST['a_name']); 
