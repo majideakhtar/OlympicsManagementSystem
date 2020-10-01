@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Olympics Management System</title>
 </head>
 <body>
     <?php include 'header.php';?>
     <div class="cont">
         <?php
     $conn=mysqli_connect("localhost","root","");
-    if(!$conn)
-    {
+    if(!$conn) {
         echo 'not connected';
     }
     session_start();
