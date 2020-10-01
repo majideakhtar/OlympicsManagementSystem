@@ -6,10 +6,9 @@
 <body>
     <?php include 'header.php';?>
     <div class="cont">
-        <?php
+    <?php
     $conn=mysqli_connect("localhost","root","");
-    if(!$conn)
-    {
+    if(!$conn) {
         echo 'not connected';
     }
     session_start();
